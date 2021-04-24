@@ -1,0 +1,50 @@
+* {
+  margin: 0; //여전히 H1태그는 margin이 적용 ->nomalize css에서 h1태그에 적용
+  font-family: 'Noto Snas KR', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Snas KR', sans-serif;
+}
+
+body {
+  font-family: 'Noto Snas KR', sans-serif; // font가 유달리 적용이 안될 경우엔 전체 / html / body까지 지정해주자.
+}
+
+h1 {
+  margin: 0; //그래서 h1자체에 margin을 없애버린다.
+}
+
+a {
+  color: inherit; //inherit : 해당 태그가 속해있는 요소의 color값을 그대로 상속받겠다.
+  text-decoration: none;
+}
+
+/* Form 태그 초기화*/
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: 0;
+
+  &:focus {
+    //sass 문법 '&' : AND, 선언한 요소 내부 추가 설정을 원할 경우
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+a,
+button {
+  //굳이 hover 설정을 안해도 된다.
+  cursor: pointer;
+}
+
+/*목록 태그 초기화*/
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+}
