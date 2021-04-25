@@ -1,15 +1,15 @@
 * {
   margin: 0; //여전히 H1태그는 margin이 적용 ->nomalize css에서 h1태그에 적용
-  font-family: 'Noto Snas KR', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Noto Snas KR', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
-  font-family: 'Noto Snas KR', sans-serif; // font가 유달리 적용이 안될 경우엔 전체 / html / body까지 지정해주자.
+  font-family: 'Noto Sans KR', sans-serif; // font가 유달리 적용이 안될 경우엔 전체 / html / body까지 지정해주자.
 }
 
 h1 {
