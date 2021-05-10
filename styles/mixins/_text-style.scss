@@ -2,7 +2,6 @@
   font-size: $font-size-12;
   line-height: $line-height-12;
   letter-spacing: $letter-spacing-12;
-  color: $color;
 }
 
 @mixin text-style-13() {
@@ -55,11 +54,12 @@
     @include text-style-24;
   }
 
-  @if (type of($color) == color) {
+  @if (type-of($color) == color) {
     color: $color;
   }
 }
-
+/*
 p {
   @include text-style(14, $secondary);
 }
+*/
